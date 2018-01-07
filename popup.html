@@ -2,10 +2,31 @@
 <html>
   <head>
     <title>small test</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        padding: 15px;
+        width: 400px;
+      }
+      button {
+        padding: 5px;
+        width: 100%;
+      }
+      div {
+        margin: 15px 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hi, i'm an extension!</h1>
-    <button id="interact">interact</button>
+    <h1>Hi, useless element counting extension!</h1>
+    <div>
+      <span>CSS selector to count on page</span> <input id="el" /> <strong id="result"></strong>
+    </div>
+    <p><i>(div, img, etc...)</i></p>
     <script src="popup.js"></script>
   </body>
 </html>
